@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Application</title>
+    <script src="attachments.js"></script>
+</head>
+<body>
+    <h1>Welcome to My Web Application</h1>
+    <ul>
+        <li><a href="data:text/plain;base64,${btoa(window.attachments['ashravan.txt'])}">Ashravan Story</a></li>
+        <li><a href="data:application/json;base64,${btoa(window.attachments['dilemma.json'])}">Dilemma Scenario</a></li>
+        <li><a href="data:text/markdown;base64,${btoa(window.attachments['about.md'])}">About Me</a></li>
+        <li><a href="data:image/svg+xml;base64,${btoa(window.attachments['pelican.svg'])}">Pelican SVG</a></li>
+        <li><a href="data:application/json;base64,${btoa(window.attachments['restaurant.json'])}">Restaurant Recommendation</a></li>
+        <li><a href="data:application/json;base64,${btoa(window.attachments['prediction.json'])}">Prediction for Fed Funds Rate</a></li>
+    </ul>
+</body>
+</html>
